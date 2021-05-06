@@ -4,6 +4,9 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+gem 'bcrypt', '~> 3.1.7'
+gem "will_paginate", "~> 3.0.4" 
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'

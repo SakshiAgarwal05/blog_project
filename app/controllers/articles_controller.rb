@@ -9,7 +9,8 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
  end
   def index
-    @articles = Article.all
+    debugger
+    @articles = Article.paginate(page: params[:page],per_page: 1)
   end
   def show
   end
